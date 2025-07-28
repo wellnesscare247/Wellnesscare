@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - WellnessCare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-green-700">WellnessCare</h1>
+    <div class="flex items-center gap-4">
+      <p id="userEmail" class="text-sm text-green-600 hidden sm:block">Welcome!</p>
+      <button onclick="logout()" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+        Log Out
+      </button>
+    </div>
+  </header>
+
+  <main class="pt-24 px-4 pb-10 max-w-6xl mx-auto">
+
+    <!-- Therapy Options -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+      <!-- In Person -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center">
+        <div class="text-4xl mb-3 text-green-600">🏠</div>
+        <h2 class="text-xl font-bold text-green-700 mb-2">In-Person Therapy</h2>
+        <p class="text-gray-600 mb-4">Therapist comes to your home. 50% advance required.</p>
+        <a href="booking.html"
+           class="bg-green-600 text-white px-5 py-2 rounded-full hover:bg-green-700 transition">
+          Book Now
+        </a>
+      </div>
+      <!-- Online -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center">
+        <div class="text-4xl mb-3 text-green-600">💻</div>
+        <h2 class="text-xl font-bold text-green-700 mb-2">Online Therapy</h2>
+        <p class="text-gray-600 mb-4">Join via video call from the comfort of your home.</p>
+        <a href="booking.html"
+           class="bg-green-600 text-white px-5 py-2 rounded-full hover:bg-green-700 transition">
+          Book Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Therapist Gallery -->
+    <section>
+      <h2 class="text-lg font-bold text-green-700 mb-4 text-center">Our Therapists</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <!-- 11 therapist cards -->
+        <!-- এখানে তুমি চাইলে JavaScript দিয়েও তৈরি করতে পারো -->
+        <!-- আমি ম্যানুয়ালি ১১টি বানিয়ে দিচ্ছি -->
+
+        <!-- Repeat Starts -->
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t1.jpg" alt="Therapist 1"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 1</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t2.jpg" alt="Therapist 2"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 2</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t3.jpg" alt="Therapist 3"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 3</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t4.jpg" alt="Therapist 4"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 4</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t5.jpg" alt="Therapist 5"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 5</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t6.jpg" alt="Therapist 6"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 6</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t7.jpg" alt="Therapist 7"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 7</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t8.jpg" alt="Therapist 8"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 8</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t9.jpg" alt="Therapist 9"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 9</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t10.jpg" alt="Therapist 10"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 10</h3>
+        </a>
+        <a href="booking.html" class="bg-white p-2 rounded-xl shadow hover:shadow-md transition block">
+          <img src="therapists/t11.jpg" alt="Therapist 11"
+               class="rounded-lg w-full h-36 object-cover mb-1" loading="lazy">
+          <h3 class="text-sm font-semibold text-center text-green-700">Therapist 11</h3>
+        </a>
+        <!-- Repeat Ends -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Firebase Auth (optional for user email) -->
+  <script type="module">
+    // Only use if Firebase is set up and user is logged in
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAE5wfwely6WfqaEie8D1taKg-fIeLy5Xs",
+      authDomain: "wellnesscare-41bc1.firebaseapp.com",
+      projectId: "wellnesscare-41bc1",
+      storageBucket: "wellnesscare-41bc1.firebasestorage.app",
+      messagingSenderId: "861886651339",
+      appId: "1:861886651339:web:1ba2653aea71f9b04f344e"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, user => {
+      if (user) {
+        document.getElementById('userEmail').innerText = `Signed in as: ${user.email}`;
+      } else {
+        location.href = 'login.html';
+      }
+    });
+
+    function logout() {
+      signOut(auth).then(() => {
+        location.href = 'login.html';
+      });
+    }
+  </script>
+
+</body>
+</html>
